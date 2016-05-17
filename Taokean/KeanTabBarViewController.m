@@ -33,8 +33,8 @@
     
     UITabBarItem * myCenterItem = self.tabBar.items[1];
     myCenterItem.title = @"个人中心";
-    mainItem.image = [UIImage imageNamed:@"gerenzhongxinhui"];
-    mainItem.selectedImage = [UIImage imageNamed:@"gerenzhongxinlan"];
+    myCenterItem.image = [UIImage imageNamed:@"gerenzhongxinhui"];
+    myCenterItem.selectedImage = [UIImage imageNamed:@"gerenzhongxinlan"];
     
     self.delegate = self;
 }
