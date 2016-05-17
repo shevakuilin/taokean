@@ -36,7 +36,6 @@
     mainItem.image = [UIImage imageNamed:@"gerenzhongxinhui"];
     mainItem.selectedImage = [UIImage imageNamed:@"gerenzhongxinlan"];
     
-    
     self.delegate = self;
 }
 

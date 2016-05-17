@@ -734,7 +734,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Uti";
 				INFOPLIST_FILE = Taokean/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -761,7 +761,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Uti";
 				INFOPLIST_FILE = Taokean/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

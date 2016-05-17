@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "KeanTabBarViewController.h"
 //#import "KeanTabBarViewController.h"
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //设置tabBarViewController
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    KeanTabBarViewController * tabBar = [[KeanTabBarViewController alloc] init];
+    self.window.rootViewController = tabBar;
+    [self.window makeKeyAndVisible];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0/255.0 green:175/255.0 blue:240/255.0 alpha:1]];
