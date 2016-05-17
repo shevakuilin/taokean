@@ -23,6 +23,7 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"KeanDetailedTableViewCell" bundle:nil] forCellReuseIdentifier:@"keanCell"];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)didReceiveMemoryWarning {
