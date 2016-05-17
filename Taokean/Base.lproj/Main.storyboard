@@ -9,7 +9,7 @@
         <!--Root View Controller-->
         <scene sceneID="clB-vc-fyl">
             <objects>
-                <viewController id="703-4V-yAM" customClass="RootViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="703-4V-yAM" customClass="RootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I7W-xW-C47"/>
                         <viewControllerLayoutGuide type="bottom" id="IfR-02-kHw"/>
@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478" y="-231"/>
+            <point key="canvasLocation" x="352" y="93"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="laj-wc-csN">
@@ -236,16 +236,18 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="SaF-kQ-W9S" id="zcQ-mx-aNw"/>
+                        <segue destination="I8G-1K-d2K" kind="push" id="Ebc-QK-g9d"/>
+                        <segue destination="S4R-Ja-viH" kind="push" id="QIr-Bs-Raf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmM-LV-UJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343" y="-878"/>
+            <point key="canvasLocation" x="339" y="-580"/>
         </scene>
         <!--详情-->
         <scene sceneID="BeX-73-6vz">
             <objects>
-                <viewController storyboardIdentifier="detailed" id="I8G-1K-d2K" customClass="KeanHomeDetailedViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailed" hidesBottomBarWhenPushed="YES" id="I8G-1K-d2K" customClass="KeanHomeDetailedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WYj-ZS-rDc"/>
                         <viewControllerLayoutGuide type="bottom" id="1Xp-9B-Al4"/>
@@ -255,12 +257,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QNT-XR-3mN">
-                                <rect key="frame" x="0.0" y="-30" width="320" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GKR-hR-CrV">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GKR-hR-CrV" id="524-lG-Crg">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -276,7 +278,7 @@
                             <constraint firstItem="1Xp-9B-Al4" firstAttribute="top" secondItem="QNT-XR-3mN" secondAttribute="bottom" id="41o-dQ-vVy"/>
                             <constraint firstItem="QNT-XR-3mN" firstAttribute="leading" secondItem="mWm-0f-UfG" secondAttribute="leading" id="KfP-Md-RQ4"/>
                             <constraint firstAttribute="trailing" secondItem="QNT-XR-3mN" secondAttribute="trailing" id="T3D-5M-Ma9"/>
-                            <constraint firstItem="QNT-XR-3mN" firstAttribute="top" secondItem="WYj-ZS-rDc" secondAttribute="bottom" constant="-50" id="Z8A-Xv-RGs"/>
+                            <constraint firstItem="QNT-XR-3mN" firstAttribute="top" secondItem="WYj-ZS-rDc" secondAttribute="bottom" id="Z8A-Xv-RGs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="详情" id="nzP-C3-v0L"/>
@@ -286,12 +288,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Qa-Qq-IbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770" y="-878"/>
+            <point key="canvasLocation" x="770" y="-580"/>
         </scene>
         <!--Data View Controller-->
         <scene sceneID="snT-py-3hH">
             <objects>
-                <viewController storyboardIdentifier="DataViewController" id="S4R-Ja-viH" customClass="DataViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DataViewController" hidesBottomBarWhenPushed="YES" id="S4R-Ja-viH" customClass="DataViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fXf-Jd-eTc"/>
                         <viewControllerLayoutGuide type="bottom" id="EPS-s9-h4K"/>
@@ -306,8 +308,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-V9-EN7">
-                                <rect key="frame" x="20" y="44" width="280" height="536"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-V9-EN7">
+                                <rect key="frame" x="20" y="64" width="280" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -315,20 +317,21 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="s1b-V9-EN7" secondAttribute="trailing" constant="20" symbolic="YES" id="333-Jl-G0r"/>
                             <constraint firstItem="s1b-V9-EN7" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" constant="20" symbolic="YES" id="CIC-qa-9gW"/>
+                            <constraint firstItem="s1b-V9-EN7" firstAttribute="top" secondItem="fXf-Jd-eTc" secondAttribute="bottom" id="EUO-Bp-OSV"/>
                             <constraint firstItem="cF2-Le-7mQ" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" constant="20" symbolic="YES" id="PnF-O8-Bso"/>
-                            <constraint firstAttribute="bottom" secondItem="s1b-V9-EN7" secondAttribute="bottom" constant="20" symbolic="YES" id="Xg4-Xc-7kb"/>
+                            <constraint firstAttribute="bottom" secondItem="s1b-V9-EN7" secondAttribute="bottom" id="Xg4-Xc-7kb"/>
                             <constraint firstAttribute="trailing" secondItem="cF2-Le-7mQ" secondAttribute="trailing" constant="20" symbolic="YES" id="cCk-mG-gz5"/>
-                            <constraint firstItem="s1b-V9-EN7" firstAttribute="top" secondItem="cF2-Le-7mQ" secondAttribute="bottom" constant="8" symbolic="YES" id="kQJ-gh-hu4"/>
                             <constraint firstItem="cF2-Le-7mQ" firstAttribute="top" secondItem="ZwX-cT-FIQ" secondAttribute="top" constant="20" symbolic="YES" id="zem-Jm-uYh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="w1V-xd-iPO"/>
                     <connections>
                         <outlet property="dataLabel" destination="cF2-Le-7mQ" id="3EH-BK-JV6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="850" y="-231"/>
+            <point key="canvasLocation" x="770" y="93"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cn6-Y6-odg">

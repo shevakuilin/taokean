@@ -33,7 +33,7 @@
     
     [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
     
-    self.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;//去掉tableview分割线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;//去掉tableview分割线
     
     self.infoArray = [[NSArray alloc] init];
     self.infoArray = @[@"これ 以上 何 を 失 えば 心 は 许 されるの",@"どれほどの 痛 みならば もう 一度君 に 会 える",@"one more time 季节 よ うつろわないで,one more time ふざけあった 时间 よ",@"食 い 违 うときはいつも 仆 が 先 に 折 れたね,わがままな 性格 が なおさら 爱 しくさせた,one more chance 记忆 に 足 を 取 られて,one more chance 次 の 场所 を 选 べないlalalalalalalalllalalalalalalalalalalalalalalalllaalallalalalaalalalalalalala",@"いつでも 捜さ しているよ どっかに 君 の 姿 を",@"向 かいのホーム 路地裏 の 窓",@"こんなとこにいるはずもないのに",@"愿 いがもしも 叶 うなら 今 すぐ 君 のもとへ",@"できないことはもう 何 もない",@"全 てかけて 抱 きしめてみせるよ",@"寂しさ 纷 らすだけなら 谁 でもいいはずなのに",@"星 が 落 ちそうな 夜 だから 自分 を 伪 れない",@"いつでも 捜 しているよ どっかに 君 の 姿 を",@"奇迹 がもしも 起 こるなら 今 すぐ 君 に 见 せたい",@"夏 の 思 い 出 がまわる ふいに 消 えた 鼓动",@"いつでも 捜 しているよ どっかに 君 の 姿 を"];
