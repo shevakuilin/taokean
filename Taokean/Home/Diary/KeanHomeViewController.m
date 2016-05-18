@@ -8,7 +8,7 @@
 
 #import "KeanHomeViewController.h"
 #import "UINavigationBar+Awesome.h"
-#import "WPUtil.h"
+#import "constant.h"
 #import "KeanMessageTableViewCell.h"
 #import "KeanHomeDetailedViewController.h"
 #define NAVBAR_CHANGE_POINT 50
@@ -53,7 +53,8 @@
  */
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    UIColor * color = [UIColor colorWithRed:0/255.0 green:175/255.0 blue:240/255.0 alpha:1];
+    //设置navigation颜色
+    UIColor * color = WPColor(0, 178, 145);
     CGFloat offsetY = scrollView.contentOffset.y;
     if (offsetY > NAVBAR_CHANGE_POINT) {
         CGFloat alpha = MIN(1, 1 - ((NAVBAR_CHANGE_POINT + 64 - offsetY) / 64));

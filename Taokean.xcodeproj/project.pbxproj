@@ -136,8 +136,8 @@
 		77463A991CEC1D23006C378B /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		77463A9A1CEC1D23006C378B /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		77463A9B1CEC1D23006C378B /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		77463A9C1CEC1D23006C378B /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
-		77463A9D1CEC1D23006C378B /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		77463A9C1CEC1D23006C378B /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Awesome.h"; path = "UIKit+AFNetworking/UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		77463A9D1CEC1D23006C378B /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Awesome.m"; path = "UIKit+AFNetworking/UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		77463A9E1CEC1D23006C378B /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		77463A9F1CEC1D23006C378B /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		77463AA01CEC1D23006C378B /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
@@ -259,6 +259,8 @@
 		77463A5B1CEC1C05006C378B /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				77463A9C1CEC1D23006C378B /* UINavigationBar+Awesome.h */,
+				77463A9D1CEC1D23006C378B /* UINavigationBar+Awesome.m */,
 				77463A5C1CEC1C05006C378B /* AFNetworking */,
 				77463A5D1CEC1C05006C378B /* TPKeyboardAvoiding */,
 				77463A5E1CEC1C05006C378B /* UIKit+AFNetworking */,
@@ -320,8 +322,6 @@
 				77463A991CEC1D23006C378B /* UIImageView+AFNetworking.h */,
 				77463A9A1CEC1D23006C378B /* UIImageView+AFNetworking.m */,
 				77463A9B1CEC1D23006C378B /* UIKit+AFNetworking.h */,
-				77463A9C1CEC1D23006C378B /* UINavigationBar+Awesome.h */,
-				77463A9D1CEC1D23006C378B /* UINavigationBar+Awesome.m */,
 				77463A9E1CEC1D23006C378B /* UIProgressView+AFNetworking.h */,
 				77463A9F1CEC1D23006C378B /* UIProgressView+AFNetworking.m */,
 				77463AA01CEC1D23006C378B /* UIRefreshControl+AFNetworking.h */,
