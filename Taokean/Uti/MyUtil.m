@@ -6,11 +6,11 @@
 //  Copyright (c) 2014年 Chongqing Institute Of Engineering. All rights reserved.
 //
 
-#import "WPUtil.h"
+#import "MyUtil.h"
 #import "constant.h"
 #import "MBProgressHUD.h"
 
-@implementation WPUtil
+@implementation MyUtil
 
 + (void)transformView:(UIView *)view withOffset:(CGFloat)offset andOreintation:(NSInteger)oreintation
 {
@@ -403,7 +403,7 @@
     NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     //医生出生日期
-    if ([WPUtil isNilOrEmpty:str]) {
+    if ([MyUtil isNilOrEmpty:str]) {
         return @"";
     }
     NSString * str1 = [str substringToIndex:10];
@@ -631,7 +631,7 @@
 
 + (void)jumpToLoginWithViewController:(UIViewController *)viewController
 {
-    UINavigationController * loginNavigationController = [WPUtil getViewControllerWithIdentifier:@"loginNavigation" storyboardName:@"Login"];
+    UINavigationController * loginNavigationController = [MyUtil getViewControllerWithIdentifier:@"loginNavigation" storyboardName:@"Login"];
     [viewController presentViewController:loginNavigationController animated:YES completion:^{
         
     }];
@@ -639,23 +639,23 @@
 
 + (NSString *)getCertificateName:(NSDictionary *)dict
 {
-    NSString * work = [WPUtil getNoneNilString:dict[@"work"]];
-    NSString * profession_auth = [WPUtil getNoneNilString:dict[@"profession_auth"]];
+    NSString * work = [MyUtil getNoneNilString:dict[@"work"]];
+    NSString * profession_auth = [MyUtil getNoneNilString:dict[@"profession_auth"]];
     NSString * firstString = [NSString stringWithFormat:@"%@%@", work, profession_auth];
     
-    NSString * school = [WPUtil getNoneNilString:dict[@"school"]];
-    NSString * major = [WPUtil getNoneNilString:dict[@"major"]];
-    NSString * degree = [WPUtil getNoneNilString:dict[@"degree"]];
+    NSString * school = [MyUtil getNoneNilString:dict[@"school"]];
+    NSString * major = [MyUtil getNoneNilString:dict[@"major"]];
+    NSString * degree = [MyUtil getNoneNilString:dict[@"degree"]];
     NSString * secondString = [NSString stringWithFormat:@"%@%@%@", school, major, degree];
     
-    if ([WPUtil isNilOrEmpty:firstString] && [WPUtil isNilOrEmpty:secondString]) {
+    if ([MyUtil isNilOrEmpty:firstString] && [MyUtil isNilOrEmpty:secondString]) {
         return @"暂无";
     }
     
-    if ([WPUtil isNilOrEmpty:firstString]) {
+    if ([MyUtil isNilOrEmpty:firstString]) {
         return secondString;
     }
-    if ([WPUtil isNilOrEmpty:secondString]) {
+    if ([MyUtil isNilOrEmpty:secondString]) {
         return firstString;
     }
     return [NSString stringWithFormat:@"%@,%@", firstString, secondString];

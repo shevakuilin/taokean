@@ -118,7 +118,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    KeanHomeDetailedViewController * detailedVC = [WPUtil getViewControllerWithIdentifier:@"detailed" storyboardName:@"Main"];
+    KeanHomeDetailedViewController * detailedVC = [MyUtil getViewControllerWithIdentifier:@"detailed" storyboardName:@"Main"];
     detailedVC.theInfoArray = self.infoArray[indexPath.row];
     
     [self.navigationController pushViewController:detailedVC animated:YES];

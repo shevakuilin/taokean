@@ -24,7 +24,7 @@
 #define WPColor(x, y, z)            [UIColor colorWithRed:x/255.0 green:y/255.0 blue:z/255.0 alpha:1]
 
 
-@interface WPUtil : NSObject
+@interface MyUtil : NSObject
 
 //调节view高度；参数：需要调节的view，需要调节的偏移量，视图的方向
 + (void)transformView:(UIView *)view withOffset:(CGFloat)offset andOreintation:(NSInteger)oreintation;

@@ -21,7 +21,7 @@
 		77463A5A1CEC1A66006C378B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463A511CEC1A66006C378B /* RootViewController.m */; };
 		77463A681CEC1C8F006C378B /* HudUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463A631CEC1C8F006C378B /* HudUtil.m */; };
 		77463A691CEC1C8F006C378B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463A651CEC1C8F006C378B /* MBProgressHUD.m */; };
-		77463A6A1CEC1C8F006C378B /* WPUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463A671CEC1C8F006C378B /* WPUtil.m */; };
+		77463A6A1CEC1C8F006C378B /* MyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463A671CEC1C8F006C378B /* MyUtil.m */; };
 		77463A801CEC1D10006C378B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463A6C1CEC1D10006C378B /* AFHTTPRequestOperation.m */; };
 		77463A811CEC1D10006C378B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463A6E1CEC1D10006C378B /* AFHTTPRequestOperationManager.m */; };
 		77463A821CEC1D10006C378B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463A701CEC1D10006C378B /* AFHTTPSessionManager.m */; };
@@ -45,6 +45,12 @@
 		77463AAD1CEC1D23006C378B /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463AA31CEC1D23006C378B /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		77463AAE1CEC1D23006C378B /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463AA51CEC1D23006C378B /* UIWebView+AFNetworking.m */; };
 		77463AB11CEC1D2B006C378B /* XLCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463AB01CEC1D2B006C378B /* XLCycleScrollView.m */; };
+		77463AB61CEC486F006C378B /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77463AB51CEC486F006C378B /* Add.storyboard */; };
+		77463AB91CEC48A2006C378B /* KeanAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463AB81CEC48A2006C378B /* KeanAddViewController.m */; };
+		77463ABB1CEC48BF006C378B /* Expenses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77463ABA1CEC48BF006C378B /* Expenses.storyboard */; };
+		77463ABE1CEC48D1006C378B /* KeanExpensesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463ABD1CEC48D1006C378B /* KeanExpensesViewController.m */; };
+		77463AC01CEC4903006C378B /* Grass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77463ABF1CEC4903006C378B /* Grass.storyboard */; };
+		77463AC31CEC491A006C378B /* KeanGrassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463AC21CEC491A006C378B /* KeanGrassViewController.m */; };
 		E45C83991BDF1E77009DD5CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E45C83981BDF1E77009DD5CF /* main.m */; };
 		E45C839C1BDF1E77009DD5CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E45C839B1BDF1E77009DD5CF /* AppDelegate.m */; };
 		E45C83A81BDF1E77009DD5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45C83A61BDF1E77009DD5CF /* Main.storyboard */; };
@@ -98,8 +104,8 @@
 		77463A631CEC1C8F006C378B /* HudUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudUtil.m; sourceTree = "<group>"; };
 		77463A641CEC1C8F006C378B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		77463A651CEC1C8F006C378B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		77463A661CEC1C8F006C378B /* WPUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPUtil.h; sourceTree = "<group>"; };
-		77463A671CEC1C8F006C378B /* WPUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPUtil.m; sourceTree = "<group>"; };
+		77463A661CEC1C8F006C378B /* MyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUtil.h; sourceTree = "<group>"; };
+		77463A671CEC1C8F006C378B /* MyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUtil.m; sourceTree = "<group>"; };
 		77463A6B1CEC1D10006C378B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		77463A6C1CEC1D10006C378B /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		77463A6D1CEC1D10006C378B /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -148,6 +154,15 @@
 		77463AA51CEC1D23006C378B /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		77463AAF1CEC1D2B006C378B /* XLCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCycleScrollView.h; sourceTree = "<group>"; };
 		77463AB01CEC1D2B006C378B /* XLCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCycleScrollView.m; sourceTree = "<group>"; };
+		77463AB51CEC486F006C378B /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
+		77463AB71CEC48A2006C378B /* KeanAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeanAddViewController.h; sourceTree = "<group>"; };
+		77463AB81CEC48A2006C378B /* KeanAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeanAddViewController.m; sourceTree = "<group>"; };
+		77463ABA1CEC48BF006C378B /* Expenses.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Expenses.storyboard; sourceTree = "<group>"; };
+		77463ABC1CEC48D1006C378B /* KeanExpensesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeanExpensesViewController.h; sourceTree = "<group>"; };
+		77463ABD1CEC48D1006C378B /* KeanExpensesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeanExpensesViewController.m; sourceTree = "<group>"; };
+		77463ABF1CEC4903006C378B /* Grass.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Grass.storyboard; sourceTree = "<group>"; };
+		77463AC11CEC491A006C378B /* KeanGrassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeanGrassViewController.h; sourceTree = "<group>"; };
+		77463AC21CEC491A006C378B /* KeanGrassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeanGrassViewController.m; sourceTree = "<group>"; };
 		E45C83941BDF1E77009DD5CF /* Taokean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taokean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45C83981BDF1E77009DD5CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E45C839A1BDF1E77009DD5CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -351,10 +366,40 @@
 				77463A631CEC1C8F006C378B /* HudUtil.m */,
 				77463A641CEC1C8F006C378B /* MBProgressHUD.h */,
 				77463A651CEC1C8F006C378B /* MBProgressHUD.m */,
-				77463A661CEC1C8F006C378B /* WPUtil.h */,
-				77463A671CEC1C8F006C378B /* WPUtil.m */,
+				77463A661CEC1C8F006C378B /* MyUtil.h */,
+				77463A671CEC1C8F006C378B /* MyUtil.m */,
 			);
 			path = Uti;
+			sourceTree = "<group>";
+		};
+		77463AB21CEC4852006C378B /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				77463AB51CEC486F006C378B /* Add.storyboard */,
+				77463AB71CEC48A2006C378B /* KeanAddViewController.h */,
+				77463AB81CEC48A2006C378B /* KeanAddViewController.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		77463AB31CEC4852006C378B /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				77463ABA1CEC48BF006C378B /* Expenses.storyboard */,
+				77463ABC1CEC48D1006C378B /* KeanExpensesViewController.h */,
+				77463ABD1CEC48D1006C378B /* KeanExpensesViewController.m */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
+		77463AB41CEC4852006C378B /* Grass */ = {
+			isa = PBXGroup;
+			children = (
+				77463ABF1CEC4903006C378B /* Grass.storyboard */,
+				77463AC11CEC491A006C378B /* KeanGrassViewController.h */,
+				77463AC21CEC491A006C378B /* KeanGrassViewController.m */,
+			);
+			path = Grass;
 			sourceTree = "<group>";
 		};
 		E45C838B1BDF1E77009DD5CF = {
@@ -381,6 +426,9 @@
 		E45C83961BDF1E77009DD5CF /* Taokean */ = {
 			isa = PBXGroup;
 			children = (
+				77463AB21CEC4852006C378B /* Add */,
+				77463AB31CEC4852006C378B /* Expenses */,
+				77463AB41CEC4852006C378B /* Grass */,
 				77463A3E1CEC1A66006C378B /* Home */,
 				77463A341CEC194E006C378B /* MyCenter */,
 				77463A3A1CEC196C006C378B /* Structure */,
@@ -534,7 +582,10 @@
 				E45C83AA1BDF1E77009DD5CF /* Assets.xcassets in Resources */,
 				77463A391CEC194E006C378B /* MyCenter.storyboard in Resources */,
 				77463A581CEC1A66006C378B /* KeanMessageTableViewCell.xib in Resources */,
+				77463AB61CEC486F006C378B /* Add.storyboard in Resources */,
+				77463ABB1CEC48BF006C378B /* Expenses.storyboard in Resources */,
 				E45C83A81BDF1E77009DD5CF /* Main.storyboard in Resources */,
+				77463AC01CEC4903006C378B /* Grass.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,11 +612,13 @@
 			files = (
 				77463AA91CEC1D23006C378B /* UIImageView+AFNetworking.m in Sources */,
 				77463A901CEC1D1A006C378B /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				77463AC31CEC491A006C378B /* KeanGrassViewController.m in Sources */,
 				E45C839C1BDF1E77009DD5CF /* AppDelegate.m in Sources */,
+				77463AB91CEC48A2006C378B /* KeanAddViewController.m in Sources */,
 				E45C83991BDF1E77009DD5CF /* main.m in Sources */,
 				77463A561CEC1A66006C378B /* KeanHomeViewController.m in Sources */,
 				77463A381CEC194E006C378B /* KeanMyCenterViewController.m in Sources */,
-				77463A6A1CEC1C8F006C378B /* WPUtil.m in Sources */,
+				77463A6A1CEC1C8F006C378B /* MyUtil.m in Sources */,
 				77463AA61CEC1D23006C378B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				77463A841CEC1D10006C378B /* AFNetworkReachabilityManager.m in Sources */,
 				77463A3D1CEC196C006C378B /* KeanTabBarViewController.m in Sources */,
@@ -575,6 +628,7 @@
 				77463AAB1CEC1D23006C378B /* UIProgressView+AFNetworking.m in Sources */,
 				77463A891CEC1D10006C378B /* AFURLSessionManager.m in Sources */,
 				77463A811CEC1D10006C378B /* AFHTTPRequestOperationManager.m in Sources */,
+				77463ABE1CEC48D1006C378B /* KeanExpensesViewController.m in Sources */,
 				77463A551CEC1A66006C378B /* KeanHomeDetailedViewController.m in Sources */,
 				77463A911CEC1D1A006C378B /* TPKeyboardAvoidingScrollView.m in Sources */,
 				77463A831CEC1D10006C378B /* AFNetworkActivityIndicatorManager.m in Sources */,

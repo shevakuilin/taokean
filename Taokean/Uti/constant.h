@@ -29,15 +29,15 @@
 
 #define WPALERT(title,msg) [[[UIAlertView alloc] initWithTitle:title message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil] show]
 
-#import "WPUtil.h"
+#import "MyUtil.h"
 #import "AFNetworking.h"
 #import "UIImageView+AFNetworking.h"
 #import "HudUtil.h"
 
-#define WPColor(x, y, z)            [UIColor colorWithRed:x/255.0 green:y/255.0 blue:z/255.0 alpha:1]
-#define WPFont(x)                   [UIFont systemFontOfSize:x]
-#define WPImage(x)                  [UIImage imageNamed:x]
-#define WPNib(x)                    [UINib nibWithNibName:x bundle:nil]
+#define MyColor(x, y, z)            [UIColor colorWithRed:x/255.0 green:y/255.0 blue:z/255.0 alpha:1]
+#define MyFont(x)                   [UIFont systemFontOfSize:x]
+#define MyImage(x)                  [UIImage imageNamed:x]
+#define MyNib(x)                    [UINib nibWithNibName:x bundle:nil]
 
 #define STATUS_KEY                  @"status"
 #define DATA_KEY                    @"data"
