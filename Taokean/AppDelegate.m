@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "KeanTabBarViewController.h"
+#import "constant.h"
 //#import "KeanTabBarViewController.h"
 @interface AppDelegate ()
 
@@ -23,6 +24,9 @@
     KeanTabBarViewController * tabBar = [[KeanTabBarViewController alloc] init];
     self.window.rootViewController = tabBar;
     [self.window makeKeyAndVisible];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor], NSFontAttributeName:[UIFont systemFontOfSize:12]} forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:WPColor(0, 178, 145), NSFontAttributeName:[UIFont systemFontOfSize:12]} forState:UIControlStateSelected];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0/255.0 green:175/255.0 blue:240/255.0 alpha:1]];
