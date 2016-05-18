@@ -23,6 +23,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     KeanTabBarViewController * tabBar = [[KeanTabBarViewController alloc] init];
     self.window.rootViewController = tabBar;
+    self.window.backgroundColor = [UIColor whiteColor];//加上这句解决tabBar点击时颜色变灰问题
     [self.window makeKeyAndVisible];
     
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor lightGrayColor], NSFontAttributeName:[UIFont systemFontOfSize:12]} forState:UIControlStateNormal];

@@ -139,4 +139,6 @@
 
 + (NSString *)getMessageTime:(NSString *)string;
 
+//返回按钮
++ (UIBarButtonItem *)barButtonItemWithTitle:(NSString *)title target:(id)target action:(SEL)selector;
 @end

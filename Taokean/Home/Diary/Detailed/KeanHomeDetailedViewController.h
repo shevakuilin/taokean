@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GDBaseViewController.h"
 
-@interface KeanHomeDetailedViewController : UIViewController
-
+@interface KeanHomeDetailedViewController : GDBaseViewController
 
 @property (strong, nonatomic) NSArray * theInfoArray;
 @end

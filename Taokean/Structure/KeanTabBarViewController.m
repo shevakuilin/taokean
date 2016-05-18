@@ -40,7 +40,7 @@
     saveItem.title = @"开销";
     saveItem.image = [[UIImage imageNamed:@"mapleleaf"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     saveItem.selectedImage = [[UIImage imageNamed:@"mapleleaf-s"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
+
     UITabBarItem * addItem = self.tabBar.items[2];
     addItem.title = @"记点什么吧";
     addItem.image = [[UIImage imageNamed:@"add"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

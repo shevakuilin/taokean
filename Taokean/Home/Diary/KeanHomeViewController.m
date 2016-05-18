@@ -54,7 +54,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     //设置navigation颜色
-    UIColor * color = WPColor(0, 178, 145);
+    UIColor * color = MyColor(0, 178, 145);
     CGFloat offsetY = scrollView.contentOffset.y;
     if (offsetY > NAVBAR_CHANGE_POINT) {
         CGFloat alpha = MIN(1, 1 - ((NAVBAR_CHANGE_POINT + 64 - offsetY) / 64));

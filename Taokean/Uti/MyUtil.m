@@ -722,6 +722,19 @@
     return string;
 }
 
++ (UIBarButtonItem *)barButtonItemWithTitle:(NSString *)title target:(id)target action:(SEL)selector
+{
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(10, 0, 30, 30);
+    [button setImageEdgeInsets:UIEdgeInsetsMake(0, -8, 0, 8)];
+    [button setTitleEdgeInsets:UIEdgeInsetsMake(0, -4, 0, 4)];
+    [button setImage:[UIImage imageNamed:@"backItem-2"] forState:UIControlStateNormal];
+    //    [button setTitle:@"返回" forState:UIControlStateNormal];
+    UIBarButtonItem * barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
+    return barButtonItem;
+}
+
 //+ (void)login
 //{
 //    NSString *url= [NSString stringWithFormat:@"%@%@%@",SERVER_IP,NewLogin_API,API_KEY];
