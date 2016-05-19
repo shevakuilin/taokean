@@ -7,7 +7,13 @@
 //
 
 #import "KeanMyCenterViewController.h"
-@interface KeanMyCenterViewController ()
+#import "UINavigationBar+Awesome.h"
+#import "constant.h"
+#import "KeanMyInfoTableViewCell.h"
+#define NAVBAR_CHANGE_POINT 50
+
+@interface KeanMyCenterViewController ()<UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -16,6 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
+    
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    [self.tableView registerNib:[UINib nibWithNibName:@"KeanMyInfoTableViewCell" bundle:nil] forCellReuseIdentifier:@"MyInfo"];
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,13 +37,49 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+ 判断移动tableView的改变量
+ */
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    //设置navigation颜色
+    UIColor * color = MyColor(0, 178, 145);
+    CGFloat offsetY = scrollView.contentOffset.y;
+    if (offsetY > NAVBAR_CHANGE_POINT) {
+        CGFloat alpha = MIN(1, 1 - ((NAVBAR_CHANGE_POINT + 64 - offsetY) / 64));
+        [self.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:alpha]];
+    } else {
+        [self.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:0]];
+    }
 }
-*/
+
+#pragma mark -
+#pragma mark - tableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    KeanMyInfoTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MyInfo"];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 155;
+}
 
 @end

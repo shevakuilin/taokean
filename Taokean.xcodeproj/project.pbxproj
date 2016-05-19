@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		74E21F0741FA02520505FBA1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1676C59FB501B571E2175C /* libPods.a */; };
+		772558C01CED90930081D98C /* KeanMyInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 772558BE1CED90930081D98C /* KeanMyInfoTableViewCell.m */; };
+		772558C11CED90930081D98C /* KeanMyInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772558BF1CED90930081D98C /* KeanMyInfoTableViewCell.xib */; };
 		77463A381CEC194E006C378B /* KeanMyCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463A361CEC194E006C378B /* KeanMyCenterViewController.m */; };
 		77463A391CEC194E006C378B /* MyCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77463A371CEC194E006C378B /* MyCenter.storyboard */; };
 		77463A3D1CEC196C006C378B /* KeanTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463A3C1CEC196C006C378B /* KeanTabBarViewController.m */; };
@@ -61,6 +63,9 @@
 /* Begin PBXFileReference section */
 		2E615E705F82041C0D5CB797 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6A1676C59FB501B571E2175C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		772558BD1CED90930081D98C /* KeanMyInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeanMyInfoTableViewCell.h; sourceTree = "<group>"; };
+		772558BE1CED90930081D98C /* KeanMyInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeanMyInfoTableViewCell.m; sourceTree = "<group>"; };
+		772558BF1CED90930081D98C /* KeanMyInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeanMyInfoTableViewCell.xib; sourceTree = "<group>"; };
 		77463A351CEC194E006C378B /* KeanMyCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeanMyCenterViewController.h; sourceTree = "<group>"; };
 		77463A361CEC194E006C378B /* KeanMyCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeanMyCenterViewController.m; sourceTree = "<group>"; };
 		77463A371CEC194E006C378B /* MyCenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyCenter.storyboard; sourceTree = "<group>"; };
@@ -160,9 +165,12 @@
 		77463A341CEC194E006C378B /* MyCenter */ = {
 			isa = PBXGroup;
 			children = (
+				77463A371CEC194E006C378B /* MyCenter.storyboard */,
 				77463A351CEC194E006C378B /* KeanMyCenterViewController.h */,
 				77463A361CEC194E006C378B /* KeanMyCenterViewController.m */,
-				77463A371CEC194E006C378B /* MyCenter.storyboard */,
+				772558BD1CED90930081D98C /* KeanMyInfoTableViewCell.h */,
+				772558BE1CED90930081D98C /* KeanMyInfoTableViewCell.m */,
+				772558BF1CED90930081D98C /* KeanMyInfoTableViewCell.xib */,
 			);
 			path = MyCenter;
 			sourceTree = "<group>";
@@ -483,6 +491,7 @@
 				77463A581CEC1A66006C378B /* KeanMessageTableViewCell.xib in Resources */,
 				77463AB61CEC486F006C378B /* Add.storyboard in Resources */,
 				77463ABB1CEC48BF006C378B /* Expenses.storyboard in Resources */,
+				772558C11CED90930081D98C /* KeanMyInfoTableViewCell.xib in Resources */,
 				E45C83A81BDF1E77009DD5CF /* Main.storyboard in Resources */,
 				77463AC01CEC4903006C378B /* Grass.storyboard in Resources */,
 			);
@@ -569,6 +578,7 @@
 				77463A551CEC1A66006C378B /* KeanHomeDetailedViewController.m in Sources */,
 				77463ACF1CEC571B006C378B /* GDBaseViewController.m in Sources */,
 				77463A571CEC1A66006C378B /* KeanMessageTableViewCell.m in Sources */,
+				772558C01CED90930081D98C /* KeanMyInfoTableViewCell.m in Sources */,
 				77463AAA1CEC1D23006C378B /* UINavigationBar+Awesome.m in Sources */,
 				77463A5A1CEC1A66006C378B /* RootViewController.m in Sources */,
 				77463A591CEC1A66006C378B /* ModelController.m in Sources */,

@@ -8,7 +8,7 @@
         <!--个人中心-->
         <scene sceneID="gUa-oj-iH4">
             <objects>
-                <viewController storyboardIdentifier="myCenter" id="tAk-5X-EkY" customClass="KeanMyCenterViewController" sceneMemberID="viewController">
+                <viewController id="tAk-5X-EkY" customClass="KeanMyCenterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zTh-bX-pNm"/>
                         <viewControllerLayoutGuide type="bottom" id="FbF-nf-9Zb"/>
@@ -16,9 +16,25 @@
                     <view key="view" contentMode="scaleToFill" id="kLz-oS-Gbw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aDD-Rv-AJF">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aDD-Rv-AJF" firstAttribute="width" secondItem="kLz-oS-Gbw" secondAttribute="width" id="ClH-lr-h2I"/>
+                            <constraint firstItem="aDD-Rv-AJF" firstAttribute="top" secondItem="zTh-bX-pNm" secondAttribute="bottom" id="LsW-Za-E0W"/>
+                            <constraint firstAttribute="trailing" secondItem="aDD-Rv-AJF" secondAttribute="trailing" id="Tys-QV-TYv"/>
+                            <constraint firstItem="FbF-nf-9Zb" firstAttribute="top" secondItem="aDD-Rv-AJF" secondAttribute="bottom" id="jkw-0c-BuT"/>
+                            <constraint firstItem="aDD-Rv-AJF" firstAttribute="leading" secondItem="kLz-oS-Gbw" secondAttribute="leading" id="w60-uu-6qe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="个人中心" id="bvW-6Z-1Cb"/>
+                    <connections>
+                        <outlet property="tableView" destination="aDD-Rv-AJF" id="14I-F4-MT0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAb-BP-jKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -27,7 +43,7 @@
         <!--Navigation Controller-->
         <scene sceneID="5xv-F1-Asj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZfZ-qU-B0J" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="myCenter" automaticallyAdjustsScrollViewInsets="NO" id="ZfZ-qU-B0J" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="psE-3r-zTJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
