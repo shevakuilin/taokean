@@ -31,7 +31,7 @@
 
 #import "MyUtil.h"
 #import "AFNetworking.h"
-#import "UIImageView+AFNetworking.h"
+//#import "UIImageView+AFNetworking.h"
 #import "HudUtil.h"
 
 #define MyColor(x, y, z)            [UIColor colorWithRed:x/255.0 green:y/255.0 blue:z/255.0 alpha:1]
