@@ -10,6 +10,7 @@
 #import "UINavigationBar+Awesome.h"
 #import "constant.h"
 #import "KeanMyInfoTableViewCell.h"
+#import "KeanMyMangeTableViewCell.h"
 #define NAVBAR_CHANGE_POINT 50
 
 @interface KeanMyCenterViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -28,6 +29,7 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.tableView registerNib:[UINib nibWithNibName:@"KeanMyInfoTableViewCell" bundle:nil] forCellReuseIdentifier:@"MyInfo"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"KeanMyMangeTableViewCell" bundle:nil] forCellReuseIdentifier:@"MyMange"];
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
@@ -56,20 +58,32 @@
 #pragma mark - tableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    if (section == 0) {
+        return 1;
+    } else {
+        return 10;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    KeanMyInfoTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MyInfo"];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    if (indexPath.section == 0) {
+        KeanMyInfoTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MyInfo"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        return cell;
+    } else {
+        KeanMyMangeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MyMange"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        return cell;
+    }
     
-    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -79,7 +93,31 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 155;
+    if (indexPath.section == 0) {
+        return 155;
+    } else {
+        return 45;
+    }
+    
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) {
+        return 0;
+    } else {
+        return 20;
+    }
+}
+
+//改变header的背景颜色
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView * headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
+    [headerView setBackgroundColor:MyColor(233, 238, 239)];
+    return headerView;
+}
+
+
 
 @end

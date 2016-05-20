@@ -10,6 +10,8 @@
 		74E21F0741FA02520505FBA1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1676C59FB501B571E2175C /* libPods.a */; };
 		772558C01CED90930081D98C /* KeanMyInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 772558BE1CED90930081D98C /* KeanMyInfoTableViewCell.m */; };
 		772558C11CED90930081D98C /* KeanMyInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772558BF1CED90930081D98C /* KeanMyInfoTableViewCell.xib */; };
+		773A15701CEEB6E700A3576F /* KeanMyMangeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 773A156E1CEEB6E700A3576F /* KeanMyMangeTableViewCell.m */; };
+		773A15711CEEB6E700A3576F /* KeanMyMangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773A156F1CEEB6E700A3576F /* KeanMyMangeTableViewCell.xib */; };
 		77463A381CEC194E006C378B /* KeanMyCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463A361CEC194E006C378B /* KeanMyCenterViewController.m */; };
 		77463A391CEC194E006C378B /* MyCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77463A371CEC194E006C378B /* MyCenter.storyboard */; };
 		77463A3D1CEC196C006C378B /* KeanTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77463A3C1CEC196C006C378B /* KeanTabBarViewController.m */; };
@@ -66,6 +68,9 @@
 		772558BD1CED90930081D98C /* KeanMyInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeanMyInfoTableViewCell.h; sourceTree = "<group>"; };
 		772558BE1CED90930081D98C /* KeanMyInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeanMyInfoTableViewCell.m; sourceTree = "<group>"; };
 		772558BF1CED90930081D98C /* KeanMyInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeanMyInfoTableViewCell.xib; sourceTree = "<group>"; };
+		773A156D1CEEB6E700A3576F /* KeanMyMangeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeanMyMangeTableViewCell.h; sourceTree = "<group>"; };
+		773A156E1CEEB6E700A3576F /* KeanMyMangeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeanMyMangeTableViewCell.m; sourceTree = "<group>"; };
+		773A156F1CEEB6E700A3576F /* KeanMyMangeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeanMyMangeTableViewCell.xib; sourceTree = "<group>"; };
 		77463A351CEC194E006C378B /* KeanMyCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeanMyCenterViewController.h; sourceTree = "<group>"; };
 		77463A361CEC194E006C378B /* KeanMyCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeanMyCenterViewController.m; sourceTree = "<group>"; };
 		77463A371CEC194E006C378B /* MyCenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyCenter.storyboard; sourceTree = "<group>"; };
@@ -171,6 +176,9 @@
 				772558BD1CED90930081D98C /* KeanMyInfoTableViewCell.h */,
 				772558BE1CED90930081D98C /* KeanMyInfoTableViewCell.m */,
 				772558BF1CED90930081D98C /* KeanMyInfoTableViewCell.xib */,
+				773A156D1CEEB6E700A3576F /* KeanMyMangeTableViewCell.h */,
+				773A156E1CEEB6E700A3576F /* KeanMyMangeTableViewCell.m */,
+				773A156F1CEEB6E700A3576F /* KeanMyMangeTableViewCell.xib */,
 			);
 			path = MyCenter;
 			sourceTree = "<group>";
@@ -488,6 +496,7 @@
 				77463A541CEC1A66006C378B /* KeanDetailedTableViewCell.xib in Resources */,
 				E45C83AA1BDF1E77009DD5CF /* Assets.xcassets in Resources */,
 				77463A391CEC194E006C378B /* MyCenter.storyboard in Resources */,
+				773A15711CEEB6E700A3576F /* KeanMyMangeTableViewCell.xib in Resources */,
 				77463A581CEC1A66006C378B /* KeanMessageTableViewCell.xib in Resources */,
 				77463AB61CEC486F006C378B /* Add.storyboard in Resources */,
 				77463ABB1CEC48BF006C378B /* Expenses.storyboard in Resources */,
@@ -579,6 +588,7 @@
 				77463ACF1CEC571B006C378B /* GDBaseViewController.m in Sources */,
 				77463A571CEC1A66006C378B /* KeanMessageTableViewCell.m in Sources */,
 				772558C01CED90930081D98C /* KeanMyInfoTableViewCell.m in Sources */,
+				773A15701CEEB6E700A3576F /* KeanMyMangeTableViewCell.m in Sources */,
 				77463AAA1CEC1D23006C378B /* UINavigationBar+Awesome.m in Sources */,
 				77463A5A1CEC1A66006C378B /* RootViewController.m in Sources */,
 				77463A591CEC1A66006C378B /* ModelController.m in Sources */,
