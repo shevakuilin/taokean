@@ -14,6 +14,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chengjiu" translatesAutoresizingMaskIntoConstraints="NO" id="VsL-Dt-9Kv">
+                        <rect key="frame" x="20" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="mDa-ji-BcR"/>
+                            <constraint firstAttribute="height" constant="24" id="xOh-mO-Xpf"/>
+                        </constraints>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成就" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qna-fb-JzK">
                         <rect key="frame" x="52" y="11" width="30" height="21"/>
                         <constraints>
@@ -23,13 +30,6 @@
                         <color key="textColor" red="0.076961226761341095" green="0.7780793309211731" blue="0.7168775200843811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chengjiu" translatesAutoresizingMaskIntoConstraints="NO" id="VsL-Dt-9Kv">
-                        <rect key="frame" x="20" y="10" width="24" height="24"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="24" id="mDa-ji-BcR"/>
-                            <constraint firstAttribute="height" constant="24" id="xOh-mO-Xpf"/>
-                        </constraints>
-                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="VsL-Dt-9Kv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Nou-6V-XO5"/>
@@ -38,6 +38,10 @@
                     <constraint firstItem="Qna-fb-JzK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nIb-iX-fDU"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="typeImageView" destination="VsL-Dt-9Kv" id="05B-jO-tp3"/>
+                <outlet property="typeTitleLabel" destination="Qna-fb-JzK" id="kyc-sd-am7"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>

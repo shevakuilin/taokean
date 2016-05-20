@@ -228,7 +228,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="主界面" id="x73-kp-U5X">
-                        <barButtonItem key="leftBarButtonItem" image="sign" id="JrL-J2-vHu"/>
+                        <barButtonItem key="leftBarButtonItem" image="qiandao" id="JrL-J2-vHu"/>
                         <barButtonItem key="rightBarButtonItem" image="lamp-s" id="Z9b-O1-riO">
                             <connections>
                                 <segue destination="703-4V-yAM" kind="push" id="jiO-Yr-CmO"/>
@@ -355,7 +355,7 @@
     </scenes>
     <resources>
         <image name="lamp-s" width="24" height="24"/>
-        <image name="sign" width="16" height="16"/>
+        <image name="qiandao" width="16" height="16"/>
         <image name="taokean" width="60" height="60"/>
         <image name="春" width="540" height="765"/>
     </resources>

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface KeanMyMangeTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *typeImageView;
+@property (weak, nonatomic) IBOutlet UILabel *typeTitleLabel;
 
 @end

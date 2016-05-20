@@ -58,14 +58,19 @@
 #pragma mark - tableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section == 0) {
         return 1;
-    } else {
+    } else if (section == 1) {
+        return 3;
+    } else if (section == 2) {
+        return 9;
+    }
+    else {
         return 10;
     }
 }
@@ -77,7 +82,53 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         return cell;
-    } else {
+    } else if (indexPath.section == 1) {
+        KeanMyMangeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MyMange"];
+        if (indexPath.row == 0) {
+            cell.typeImageView.image = [UIImage imageNamed:@"lv"];
+            cell.typeTitleLabel.text = @"等级";
+        } else if (indexPath.row == 1) {
+            cell.typeImageView.image = [UIImage imageNamed:@"shuxing"];
+            cell.typeTitleLabel.text = @"属性/能力值";
+        } else {
+            cell.typeImageView.image = [UIImage imageNamed:@"xunzhang"];
+            cell.typeTitleLabel.text = @"勋章墙";
+        }
+        return cell;
+    } else if (indexPath.section == 2) {
+        KeanMyMangeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MyMange"];
+        if (indexPath.row == 0) {
+            cell.typeImageView.image = [UIImage imageNamed:@"yigui"];
+            cell.typeTitleLabel.text = @"衣柜";
+        } else if (indexPath.row == 1) {
+            cell.typeImageView.image = [UIImage imageNamed:@"hauzhuangpin"];
+            cell.typeTitleLabel.text = @"化妆品";
+        } else if (indexPath.row == 2) {
+            cell.typeImageView.image = [UIImage imageNamed:@"xiezi"];
+            cell.typeTitleLabel.text = @"鞋子";
+        } else if (indexPath.row == 3) {
+            cell.typeImageView.image = [UIImage imageNamed:@"yinshi"];
+            cell.typeTitleLabel.text = @"饮食结构/规律";
+        } else if (indexPath.row == 4) {
+            cell.typeImageView.image = [UIImage imageNamed:@"shugui"];
+            cell.typeTitleLabel.text = @"书柜";
+        } else if (indexPath.row == 5) {
+            cell.typeImageView.image = [UIImage imageNamed:@"qianbao"];
+            cell.typeTitleLabel.text = @"钱包";
+        } else if (indexPath.row == 6) {
+            cell.typeImageView.image = [UIImage imageNamed:@"xingcheng"];
+            cell.typeTitleLabel.text = @"行程";
+        } else if (indexPath.row == 7) {
+            cell.typeImageView.image = [UIImage imageNamed:@"tianqi"];
+            cell.typeTitleLabel.text = @"天气";
+        } else {
+            cell.typeImageView.image = [UIImage imageNamed:@"rili"];
+            cell.typeTitleLabel.text = @"日历";
+        }
+        
+        return cell;
+    }
+    else {
         KeanMyMangeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MyMange"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
@@ -110,11 +161,10 @@
     }
 }
 
-//改变header的背景颜色
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UIView * headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
-    [headerView setBackgroundColor:MyColor(233, 238, 239)];
+    [headerView setBackgroundColor:MyColor(237, 236, 242)];
     return headerView;
 }
 
