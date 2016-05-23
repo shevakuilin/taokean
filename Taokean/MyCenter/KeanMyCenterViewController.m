@@ -58,7 +58,7 @@
 #pragma mark - tableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -68,10 +68,9 @@
     } else if (section == 1) {
         return 3;
     } else if (section == 2) {
-        return 9;
-    }
-    else {
         return 10;
+    } else {
+        return 4;
     }
 }
 
@@ -97,6 +96,7 @@
         return cell;
     } else if (indexPath.section == 2) {
         KeanMyMangeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MyMange"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         if (indexPath.row == 0) {
             cell.typeImageView.image = [UIImage imageNamed:@"yigui"];
             cell.typeTitleLabel.text = @"衣柜";
@@ -108,17 +108,20 @@
             cell.typeTitleLabel.text = @"鞋子";
         } else if (indexPath.row == 3) {
             cell.typeImageView.image = [UIImage imageNamed:@"yinshi"];
-            cell.typeTitleLabel.text = @"饮食结构/规律";
+            cell.typeTitleLabel.text = @"膳食结构/规律";
         } else if (indexPath.row == 4) {
             cell.typeImageView.image = [UIImage imageNamed:@"shugui"];
             cell.typeTitleLabel.text = @"书柜";
         } else if (indexPath.row == 5) {
+            cell.typeImageView.image = [UIImage imageNamed:@"yundong"];
+            cell.typeTitleLabel.text = @"运动";
+        } else if (indexPath.row == 6) {
             cell.typeImageView.image = [UIImage imageNamed:@"qianbao"];
             cell.typeTitleLabel.text = @"钱包";
-        } else if (indexPath.row == 6) {
+        } else if (indexPath.row == 7) {
             cell.typeImageView.image = [UIImage imageNamed:@"xingcheng"];
             cell.typeTitleLabel.text = @"行程";
-        } else if (indexPath.row == 7) {
+        } else if (indexPath.row == 8) {
             cell.typeImageView.image = [UIImage imageNamed:@"tianqi"];
             cell.typeTitleLabel.text = @"天气";
         } else {
@@ -131,7 +134,19 @@
     else {
         KeanMyMangeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MyMange"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        
+        if (indexPath.row == 0) {
+            cell.typeImageView.image = [UIImage imageNamed:@"dianhua"];
+            cell.typeTitleLabel.text = @"给他打电话";
+        } else if (indexPath.row == 1) {
+            cell.typeImageView.image = [UIImage imageNamed:@"shezhi"];
+            cell.typeTitleLabel.text = @"设置";
+        } else if (indexPath.row == 2) {
+            cell.typeImageView.image = [UIImage imageNamed:@"bangzhu"];
+            cell.typeTitleLabel.text = @"帮助";
+        } else {
+            cell.typeImageView.image = [UIImage imageNamed:@"kaifazhe"];
+            cell.typeTitleLabel.text = @"开发者";
+        }
         return cell;
     }
     
