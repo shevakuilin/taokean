@@ -15,6 +15,7 @@
 
 @interface KeanMyCenterViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property BOOL isExtended;
 
 @end
 
@@ -79,6 +80,7 @@
     if (indexPath.section == 0) {
         KeanMyInfoTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MyInfo"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        [cell.moreButton addTarget:self action:@selector(more) forControlEvents:UIControlEventTouchUpInside];
         
         return cell;
     } else if (indexPath.section == 1) {
@@ -160,7 +162,11 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
-        return 155;
+        if (self.isExtended == YES) {
+            return 400;
+        } else {
+            return 155;
+        }
     } else {
         return 45;
     }
@@ -184,5 +190,20 @@
 }
 
 
+/*
+ 判断是否伸展
+ */
+- (void)more
+{
+    if (self.isExtended == YES) {
+        self.isExtended = NO;
+        [self.tableView reloadData];
+        return;
+    } else {
+        self.isExtended = YES;
+        [self.tableView reloadData];
+        return;
+    }
+}
 
 @end

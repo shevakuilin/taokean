@@ -11,5 +11,6 @@
 @interface KeanMyInfoTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (weak, nonatomic) IBOutlet UIButton *editButton;
+@property (weak, nonatomic) IBOutlet UIButton *moreButton;
 
 @end

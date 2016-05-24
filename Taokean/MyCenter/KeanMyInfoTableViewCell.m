@@ -13,6 +13,7 @@
 - (void)awakeFromNib {
     // Initialization code
     self.editButton.selected = NO;
+    self.moreButton.selected = NO;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -38,6 +39,17 @@
         
     } else {
         self.editButton.selected = NO;
+        return;
+    }
+}
+
+- (IBAction)moreButton:(id)sender {
+    if (self.moreButton.selected == NO) {
+        self.moreButton.selected = YES;
+        return;
+        
+    } else {
+        self.moreButton.selected = NO;
         return;
     }
 }
